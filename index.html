@@ -2,6 +2,7 @@
   <head>
     <title>Vue Basics</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -9,6 +10,9 @@
     <div id="app">
       <h2>{{ title }}</h2>
       <p>{{ greet('morning') }}</p>
+      <a :href="url">Youtube</a>
+      <div :class="classes">Classes from Intance</div>
+      <input type="text" :value="name"> 
     </div>
 
     <script src="app.js"></script>

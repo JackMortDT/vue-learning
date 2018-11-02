@@ -1,6 +1,8 @@
 var data = {
   title: "First steps with vue",
-  name: "Isaac"
+  name: "Isaac",
+  url: "https://www.youtube.com/",
+  classes: ["one", "two"]
 }
 
 const app = new Vue({
