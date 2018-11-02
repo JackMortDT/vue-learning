@@ -3,15 +3,23 @@ var data = {
   name: "Isaac",
   url: "https://www.youtube.com/",
   classes: ["one", "two"],
-  wage: 10
+  wage: 10,
+  coords: {
+    x: 0,
+    y: 0
+  }
 }
 
 const app = new Vue({
   el: "#app",
   data: data,
   methods: {
-    changeWage(amount){
-      this.wage += amount
+    logEvent(e){
+      console.log(e)
+    },
+    logCoords(e){
+      this.coords.x = e.offsetX
+      this.coords.y = e.offsetY
     }
   }
 })
