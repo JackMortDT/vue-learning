@@ -1,8 +1,14 @@
 var data = {
-  title: "First steps with vue"
+  title: "First steps with vue",
+  name: "Isaac"
 }
 
-new Vue({
+const app = new Vue({
   el: "#app",
-  data: data
+  data: data,
+  methods: {
+    greet(time){
+      return `Hello and good ${time} ${this.name}`
+    }
+  }
 })
